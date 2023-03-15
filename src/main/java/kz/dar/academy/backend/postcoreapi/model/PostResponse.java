@@ -4,14 +4,12 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.validation.constraints.NotNull;
 
 @AllArgsConstructor
 @Data
 @NoArgsConstructor
+public class PostResponse {
 
-public class PostModel {
-    @NotNull(message = "The field cannot be empty")
     private String postId;
     private String clientId;
     private String postRecipientId;

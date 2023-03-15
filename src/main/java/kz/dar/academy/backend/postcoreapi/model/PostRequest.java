@@ -9,8 +9,7 @@ import javax.validation.constraints.NotNull;
 @AllArgsConstructor
 @Data
 @NoArgsConstructor
-
-public class PostModel {
+public class PostRequest {
     @NotNull(message = "The field cannot be empty")
     private String postId;
     private String clientId;

@@ -1,7 +1,6 @@
-package kz.dar.academy.backend.postcoreapi;
+package kz.dar.academy.backend.postcoreapi.service.deprecated;
 
 import kz.dar.academy.backend.postcoreapi.model.PostModel;
-import kz.dar.academy.backend.postcoreapi.service.PostService;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -10,7 +9,7 @@ import java.util.List;
 import java.util.UUID;
 
 @Service
-public class PostServiceImpl implements PostService {
+public class PostServiceOldImplOld implements PostServiceOld {
     private static final HashMap<String, PostModel> postMap=new HashMap<>();
     static {
         PostModel postModel1=new PostModel(UUID.randomUUID().toString(), "Client1", "Recipient1",
